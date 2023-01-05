@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+#txt
+{
+	width:200px;
+	border-style:groove;
+	height:30px;
+	border-radius:4px;
+}
+
+#btn
+{
+	background-color:#1e5799;
+	border-style:none;
+	width:100px;
+	height:30px;
+	border-radius:4px;
+	color:white;
+}
+#btn:hover{
+background-color:#1e5700;
+color:#000;
+}
+.loginpad
+{
+padding-left:20px;
+padding-top:50px;
+}
+	
+.header
+{
+		position:fixed;
+		top:0px;
+		background-color:#000;
+		width:100%;
+		left:0px;
+		color:#fff;	
+		opacity:.8;
+		text-align:center;
+}
+table{
+	text-align:center;
+}
+.contain
+		{
+			padding-top:20px;
+			padding-left:500px;
+		}
+		.section
+		{
+			background-color:#fff;
+			background-repeat:no-repeat;
+			width:300px;
+			height:440px;;
+			padding:20px;
+			border-radius:20px;
+		}
+		.bd
+		{
+			padding-top:100px;
+			padding-left:180px;
+			background-color:#fff;
+			border-radius:10px;
+			padding-bottom:30px;
+		}
+</style>
+<div class="contain">
+    <div class="section">
+    <div class="loginpad">
+        <br>
+        <form action="{% url 'search' %}" method="get">
+            <div style="text-align: center;">
+            <input type="text" name="c_phone" id="txt" placeholder="Enter Your Customer ID" required>
+            <button class="btn btn-primary mt-2">Enter</button>
+            </div>
+        </form>
+        <br>
+        <br>
+        <br>
+        <label>Note: Your Customer ID is pasted on your machine</label>
+        
+        </div>
+    </div>
+    </div>
+    
+{% endblock content %}
+    

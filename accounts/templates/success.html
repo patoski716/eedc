@@ -1,0 +1,24 @@
+
+<html>
+    <head>
+    <title>
+    EEDC Payment Portal
+    </title>
+    </head>
+    <body>
+    <center>
+    <h1>Enugu Electricity Distribution Company Payment Portal</h1>
+    <hr>
+   <br/>
+    
+    {% for post in posts %}        
+   <h3>Token: {{post.token}}</h3>
+   <h3>Phone: {{post.c_phone}}</h3> 
+   <h3>Date Created: {{post.date_added}}</h3>
+   {% endfor %}
+
+    </center>
+    </body>
+    </html>
+    
+        
